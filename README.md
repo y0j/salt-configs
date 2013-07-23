@@ -6,20 +6,16 @@ Configure a Debian/Ubuntu development environment with salt.
 Directories:
 
 base - for production sceneries
-dev - for testing sceneries
 
+dev - for testing sceneries
 
 Setup
 -----
-
-.. code:: bash
 
    git clone https://github.com/y0j/salt-configs.git /srv/salt/
 
 
 ``/etc/salt/master``:
-
-.. code:: yaml
 
 	pillar_roots:
   		base:
