@@ -37,13 +37,13 @@ site:
 
 site-enabled:
     file.symlink:
-        # Executes after osf-site
+        # Executes after site
         - name: /etc/nginx/sites-enabled/{{ pillar["django"]["domain"] }}
         - target: ../sites-available/{{ pillar["django"]["domain"] }}
         - makedirs: True
         - require:
-              - pkg: nginx
-              - file: site
+            - pkg: nginx
+            - file: site
 
 logs:
     file.directory:
