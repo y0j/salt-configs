@@ -34,7 +34,7 @@ logs:
         - name: {{ pillar["apache2_itk_vhost"]["documentroot"] }}/logs
         - user: root
         - group: root
-        - mode: 0750
+        - mode: 0751
         - makedirs: True
 
 access.log:
