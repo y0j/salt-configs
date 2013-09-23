@@ -7,3 +7,4 @@ base:
     - postgresql_django
     - nginx_phpfpm
     - phpfpm
+    - apache2_itk_vhost
